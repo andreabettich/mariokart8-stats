@@ -11,6 +11,8 @@ public class BodyType extends RealmObject implements BasicStats {
     @PrimaryKey
     private long id;
 
+    private String type;
+
     private String name;
 
     private boolean dlc;
@@ -56,6 +58,14 @@ public class BodyType extends RealmObject implements BasicStats {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     @Override
