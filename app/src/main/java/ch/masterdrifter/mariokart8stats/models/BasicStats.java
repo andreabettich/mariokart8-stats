@@ -4,7 +4,6 @@ package ch.masterdrifter.mariokart8stats.models;
  * @author Andrea Bettich
  */
 public interface BasicStats {
-    public long getId();
 
     public String getName();
 
@@ -14,51 +13,51 @@ public interface BasicStats {
 
     public void setDlc(boolean dlc);
 
-    public long getGroundSpeed();
+    public double getGroundSpeed();
 
-    public void setGroundSpeed(long groundSpeed);
+    public void setGroundSpeed(double groundSpeed);
 
-    public long getWaterSpeed();
+    public double getWaterSpeed();
 
-    public void setWaterSpeed(long waterSpeed);
+    public void setWaterSpeed(double waterSpeed);
 
-    public long getAirSpeed();
+    public double getAirSpeed();
 
-    public void setAirSpeed(long airSpeed);
+    public void setAirSpeed(double airSpeed);
 
-    public long getAntiGravitySpeed();
+    public double getAntiGravitySpeed();
 
-    public void setAntiGravitySpeed(long antiGravitySpeed);
+    public void setAntiGravitySpeed(double antiGravitySpeed);
 
-    public long getAcceleration();
+    public double getAcceleration();
 
-    public void setAcceleration(long acceleration);
+    public void setAcceleration(double acceleration);
 
-    public long getWeight();
+    public double getWeight();
 
-    public void setWeight(long weight);
+    public void setWeight(double weight);
 
-    public long getGroundHandling();
+    public double getGroundHandling();
 
-    public void setGroundHandling(long groundHandling);
+    public void setGroundHandling(double groundHandling);
 
-    public long getWaterHandling();
+    public double getWaterHandling();
 
-    public void setWaterHandling(long waterHandling);
+    public void setWaterHandling(double waterHandling);
 
-    public long getAirHandling();
+    public double getAirHandling();
 
-    public void setAirHandling(long airHandling);
+    public void setAirHandling(double airHandling);
 
-    public long getAntiGravityHandling();
+    public double getAntiGravityHandling();
 
-    public void setAntiGravityHandling(long antiGravityHandling);
+    public void setAntiGravityHandling(double antiGravityHandling);
 
-    public long getTraction();
+    public double getTraction();
 
-    public void setTraction(long traction);
+    public void setTraction(double traction);
 
-    public long getMiniTurbo();
+    public double getMiniTurbo();
 
-    public void setMiniTurbo(long miniTurbo);
+    public void setMiniTurbo(double miniTurbo);
 }

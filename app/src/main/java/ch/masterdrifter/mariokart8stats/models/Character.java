@@ -17,31 +17,30 @@ public class Character extends RealmObject implements BasicStats {
 
     private boolean dlc;
 
-    private long groundSpeed;
+    private double groundSpeed;
 
-    private long waterSpeed;
+    private double waterSpeed;
 
-    private long airSpeed;
+    private double airSpeed;
 
-    private long antiGravitySpeed;
+    private double antiGravitySpeed;
 
-    private long acceleration;
+    private double acceleration;
 
-    private long weight;
+    private double weight;
 
-    private long groundHandling;
+    private double groundHandling;
 
-    private long waterHandling;
+    private double waterHandling;
 
-    private long airHandling;
+    private double airHandling;
 
-    private long antiGravityHandling;
+    private double antiGravityHandling;
 
-    private long traction;
+    private double traction;
 
-    private long miniTurbo;
+    private double miniTurbo;
 
-    @Override
     public long getId() {
         return id;
     }
@@ -71,122 +70,122 @@ public class Character extends RealmObject implements BasicStats {
     }
 
     @Override
-    public long getGroundSpeed() {
+    public double getGroundSpeed() {
         return groundSpeed;
     }
 
     @Override
-    public void setGroundSpeed(long groundSpeed) {
+    public void setGroundSpeed(double groundSpeed) {
         this.groundSpeed = groundSpeed;
     }
 
     @Override
-    public long getWaterSpeed() {
+    public double getWaterSpeed() {
         return waterSpeed;
     }
 
     @Override
-    public void setWaterSpeed(long waterSpeed) {
+    public void setWaterSpeed(double waterSpeed) {
         this.waterSpeed = waterSpeed;
     }
 
     @Override
-    public long getAirSpeed() {
+    public double getAirSpeed() {
         return airSpeed;
     }
 
     @Override
-    public void setAirSpeed(long airSpeed) {
+    public void setAirSpeed(double airSpeed) {
         this.airSpeed = airSpeed;
     }
 
     @Override
-    public long getAntiGravitySpeed() {
+    public double getAntiGravitySpeed() {
         return antiGravitySpeed;
     }
 
     @Override
-    public void setAntiGravitySpeed(long antiGravitySpeed) {
+    public void setAntiGravitySpeed(double antiGravitySpeed) {
         this.antiGravitySpeed = antiGravitySpeed;
     }
 
     @Override
-    public long getAcceleration() {
+    public double getAcceleration() {
         return acceleration;
     }
 
     @Override
-    public void setAcceleration(long acceleration) {
+    public void setAcceleration(double acceleration) {
         this.acceleration = acceleration;
     }
 
     @Override
-    public long getWeight() {
+    public double getWeight() {
         return weight;
     }
 
     @Override
-    public void setWeight(long weight) {
+    public void setWeight(double weight) {
         this.weight = weight;
     }
 
     @Override
-    public long getGroundHandling() {
+    public double getGroundHandling() {
         return groundHandling;
     }
 
     @Override
-    public void setGroundHandling(long groundHandling) {
+    public void setGroundHandling(double groundHandling) {
         this.groundHandling = groundHandling;
     }
 
     @Override
-    public long getWaterHandling() {
+    public double getWaterHandling() {
         return waterHandling;
     }
 
     @Override
-    public void setWaterHandling(long waterHandling) {
+    public void setWaterHandling(double waterHandling) {
         this.waterHandling = waterHandling;
     }
 
     @Override
-    public long getAirHandling() {
+    public double getAirHandling() {
         return airHandling;
     }
 
     @Override
-    public void setAirHandling(long airHandling) {
+    public void setAirHandling(double airHandling) {
         this.airHandling = airHandling;
     }
 
     @Override
-    public long getAntiGravityHandling() {
+    public double getAntiGravityHandling() {
         return antiGravityHandling;
     }
 
     @Override
-    public void setAntiGravityHandling(long antiGravityHandling) {
+    public void setAntiGravityHandling(double antiGravityHandling) {
         this.antiGravityHandling = antiGravityHandling;
     }
 
     @Override
-    public long getTraction() {
+    public double getTraction() {
         return traction;
     }
 
     @Override
-    public void setTraction(long traction) {
+    public void setTraction(double traction) {
         this.traction = traction;
     }
 
     @Override
-    public long getMiniTurbo() {
+    public double getMiniTurbo() {
         return miniTurbo;
     }
 
     @Override
-    public void setMiniTurbo(long miniTurbo) {
+    public void setMiniTurbo(double miniTurbo) {
         this.miniTurbo = miniTurbo;
     }
 

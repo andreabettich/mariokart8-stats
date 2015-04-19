@@ -16,6 +16,8 @@ public class JsonTest extends ActivityInstrumentationTestCase2<MainActivity_> {
 
     private MainActivity activity;
 
+    private Realm realm;
+
     public JsonTest() {
         super(MainActivity_.class);
     }
@@ -25,11 +27,12 @@ public class JsonTest extends ActivityInstrumentationTestCase2<MainActivity_> {
         super.setUp();
 
         activity = getActivity();
+        realm = Realm.getInstance(activity);
     }
 
     @SmallTest
     public void testCharacterJson() throws Exception {
-        final Realm realm = Realm.getInstance(activity);
+
         realm.beginTransaction();
         final InputStream inputStream = activity.getResources().openRawResource(R.raw.mariokart_stats_characters);
         realm.createAllFromJson(Character.class, inputStream);
@@ -37,5 +40,12 @@ public class JsonTest extends ActivityInstrumentationTestCase2<MainActivity_> {
 
         final RealmResults<Character> all = realm.where(Character.class).findAll();
         assertFalse(all.isEmpty());
+    }
+
+    @Override
+    public void tearDown() throws Exception {
+        super.tearDown();
+
+        assertTrue(activity.deleteFile("default.realm"));
     }
 }
