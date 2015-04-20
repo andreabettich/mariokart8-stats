@@ -10,7 +10,7 @@ public class Combination extends RealmObject {
 
     private Character character;
 
-    private BodyType bodyType;
+    private Body body;
 
     private Glider glider;
 
@@ -32,12 +32,12 @@ public class Combination extends RealmObject {
         this.character = character;
     }
 
-    public BodyType getBodyType() {
-        return bodyType;
+    public Body getBody() {
+        return body;
     }
 
-    public void setBodyType(BodyType bodyType) {
-        this.bodyType = bodyType;
+    public void setBody(Body body) {
+        this.body = body;
     }
 
     public Glider getGlider() {
