@@ -5,7 +5,7 @@ import android.test.suitebuilder.annotation.SmallTest;
 
 import java.io.InputStream;
 
-import ch.masterdrifter.mariokart8stats.models.Character;
+import ch.masterdrifter.mariokart8stats.models.Driver;
 import io.realm.Realm;
 import io.realm.RealmResults;
 
@@ -31,11 +31,11 @@ public class JsonTest extends ActivityInstrumentationTestCase2<MainActivity_> {
     public void testCharacterJson() throws Exception {
         final Realm realm = Realm.getInstance(activity);
         realm.beginTransaction();
-        final InputStream inputStream = activity.getResources().openRawResource(R.raw.mariokart_stats_characters);
-        realm.createAllFromJson(Character.class, inputStream);
+        final InputStream inputStream = activity.getResources().openRawResource(R.raw.mariokart_stats_drivers);
+        realm.createAllFromJson(Driver.class, inputStream);
         realm.commitTransaction();
 
-        final RealmResults<Character> all = realm.where(Character.class).findAll();
+        final RealmResults<Driver> all = realm.where(Driver.class).findAll();
         assertFalse(all.isEmpty());
     }
 }

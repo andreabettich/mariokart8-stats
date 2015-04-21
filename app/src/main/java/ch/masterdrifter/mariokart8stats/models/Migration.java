@@ -29,8 +29,8 @@ public class Migration implements RealmMigration {
         if (version == -1) {
             realm.beginTransaction();
             try {
-                final InputStream charStream = context.getResources().openRawResource(R.raw.mariokart_stats_characters);
-                realm.createAllFromJson(Character.class, charStream);
+                final InputStream charStream = context.getResources().openRawResource(R.raw.mariokart_stats_drivers);
+                realm.createAllFromJson(Driver.class, charStream);
                 realm.commitTransaction();
             } catch (IOException e) {
                 Log.e(TAG, "Failed to migrate from version 0 to 1");

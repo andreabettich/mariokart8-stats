@@ -8,7 +8,7 @@ import io.realm.RealmObject;
 public class Combination extends RealmObject {
     private long id;
 
-    private Character character;
+    private Driver character;
 
     private Body body;
 
@@ -24,11 +24,11 @@ public class Combination extends RealmObject {
         this.id = id;
     }
 
-    public Character getCharacter() {
+    public Driver getCharacter() {
         return character;
     }
 
-    public void setCharacter(Character character) {
+    public void setCharacter(Driver character) {
         this.character = character;
     }
 

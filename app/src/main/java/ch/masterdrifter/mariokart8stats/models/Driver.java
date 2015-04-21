@@ -6,7 +6,7 @@ import io.realm.annotations.PrimaryKey;
 /**
  * @author Andrea Bettich
  */
-public class Character extends RealmObject implements BasicStats {
+public class Driver extends RealmObject implements BasicStats {
 
     @PrimaryKey
     private long id;
